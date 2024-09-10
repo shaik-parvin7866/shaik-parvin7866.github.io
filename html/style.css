@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width:100%;
+    margin:auto;
+    padding: 0;
+}
+.row .image{
+    width:50%
+}
+.row .para{
+    font-size: 18px;
+}
+.slider-container {
+    margin: 20px;
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+    /* border: 3px solid red; */
+}
+
+.logos-slider {
+    display: flex;
+    width: 100%;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite running;
+}
+
+.logo-img {
+    width: 200px; /* Adjust width as needed */
+    margin-right: 20px; /* Adjust spacing between logos if needed */
+    height: 150px;
+    /* border: 2px solid red; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: white;
+    border-radius: 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.container {
+    margin-top: 20px;
+  }
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  .para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for effects */
+}
+.card:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Add shadow effect */
+}
+.card-header {
+    background-color: #9C9A9A;
+    /* Customize header color */
+    color: #fff;
+    /* Text color for the header */
+
+}
+.contact-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+  }
+  .contact-section h2 {
+    margin-bottom: 20px;
+  }
+  .contact-section p {
+    margin-bottom: 30px;
+  }
+  .test{
+    color: red;
+    font-size: 20px;
+  }
+  
